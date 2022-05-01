@@ -1,0 +1,126 @@
+
+<html>
+    <head>
+      <title>Players</title>   
+    </head>
+    <body>
+    <h1>Players</h1>
+    <a href="Visiting Teams.html">Visiting Teams</a> - <a href="Players.html">Players</a> - <a href="Player Stats.html">Player Stats</a> - <a href="Home Game Sales.html">Home Game Sales</a>
+    <table border="1">
+    <tr>
+            <th>Player ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Age</th>
+            <th>Height (in)</th>
+            <th>Year</th>
+            <th>Edit</th>
+            <th>Delete</th>
+    </tr>
+    <tr>
+        <td>20210105</td>
+        <td>Dan</td>
+        <td>Smith</td>
+        <td>22</td>
+        <td>72</td>
+        <td>1</td>
+        <td><a href="#" onClick="updateTeam('this.visting_team_id')">Edit</a></td>
+        <td align="center"><a href="#" onclick="deleteTeam('this.visting_team_id')">X</a></td>
+    </tr>
+    <tr>
+        <td>20120218</td>
+        <td>Robert</td>
+        <td>California</td>
+        <td>30</td>
+        <td>82</td>
+        <td>10</td>
+        <td><a href="#" onClick="updateTeam('this.visting_team_id')">Edit</a></td>
+        <td align="center"><a href="#" onclick="deleteTeam('this.visting_team_id')">X</a></td>
+    </tr>
+    <tr>
+        <td>20210101</td>
+        <td>James</td>
+        <td>Kirk</td>
+        <td>18</td>
+        <td>78</td>
+        <td>1</td>
+        <td><a href="#" onClick="updateTeam('this.visting_team_id')">Edit</a></td>
+        <td align="center"><a href="#" onclick="deleteTeam('this.visting_team_id')">X</a></td>
+    </tr>
+    </table>
+    <h2>Edit Palyer</h2>
+    <form action="">
+        <label for ="pid">Player ID</label>
+        <input type="number" id="pid" name="id" min="8" max="9">
+        <label for ="fname">First Name</label>
+        <input type="text" id="fname" name="fname">
+        <label for ="lname">Last Name</label>
+        <input type="text" id="lname" name="lname">
+        <label for ="age">Age</label>
+        <input type="text" id="age" name="age">
+        <label for ="height">Height</label>
+        <input type="text" id="height" name="height">
+        <label for ="year">Year</label>
+        <input type="text" id="year" name="year">
+        <label for="teams">Team:</label>
+        <select name="teams" id="team-select">
+            <option value="">Choose a team</option>
+            <option value="1">Pawnee Racoons</option>
+            <option value="2">New York Bricks</option>
+            <option value="3">Utah Rocks</option>
+        </select>
+        <label for ="edate">End Date With Team</label>
+        <input type="date" id="edate" name="edate">
+        <input type="submit" value="Edit">
+    </form>
+
+    <h2>Add a Player</h2>
+    <from action="">
+        <label for ="fname">First Name</label>
+        <input type="text" id="fname" name="fname">
+        <label for ="lname">Last name</label>
+        <input type="text" id="lname" name="lname">
+        <label for ="age">Age</label>
+        <input type="text" id="age" name="age">
+        <label for ="height">Height</label>
+        <input type="text" id="height" name="height">
+        <label for ="year">Year</label>
+        <input type="text" id="year" name="year">
+        <label for="teams">Team:</label>
+        <select name="teams" id="team-select">
+            <option value="">Choose a team</option>
+            <option value="1">Pawnee Racoons</option>
+            <option value="2">New York Bricks</option>
+            <option value="3">Utah Rocks</option>
+        </select>
+        <input type="submit" value="Add">
+    </from>
+    <h2>Player Search</h2>
+
+    <form action="">
+        <label for ="pid">Player ID</label>
+        <input type="number" id="pid" name="id" min="8" max="9">
+        <label for ="fname">First Name</label>
+        <input type="text" id="fname" name="fname">
+        <label for ="lname">Last name</label>
+        <input type="text" id="lname" name="lname">
+        <label for ="age">Age</label>
+        <input type="text" id="age" name="age">
+        <label for ="height">Height</label>
+        <input type="text" id="height" name="height">
+        <label for ="year">Year</label>
+        <input type="text" id="year" name="year">
+        <label for="teams">Team:</label>
+        <select name="teams" id="team-select">
+            <option value="">Choose a team</option>
+            <option value="1">Pawnee Racoons</option>
+            <option value="2">New York Bricks</option>
+            <option value="3">Utah Rocks</option>
+        </select>
+        <label for ="edate">End Date With Team</label>
+        <input type="date" id="edate" name="edate">
+        <input type="submit" value="Search">
+    </form>
+    
+    </body>
+    </html>
