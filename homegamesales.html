@@ -1,0 +1,61 @@
+<html>
+<head>
+  <title>Home Game Sales</title>
+
+</head>
+<body>
+<h1>Home Game Sales</h1>
+<a href="Visiting Teams.html">Visiting Teams</a> - <a href="Players.html">Players</a> - <a href="Player Stats.html">Player Stats</a> - <a href="Home Game Sales.html">Home Game Sales</a>
+<table border="1">
+<tr>
+        <th>Visting Team ID</th>
+        <th>Home Game Date</th>
+        <th>Tickets Sold</th>
+        <th>Merchandise Revenue</th>
+        <th>Concession Revenue</th>
+</tr>
+<tr>
+    <td>1</td>
+    <td>2022-02-27</td>
+    <td>22,000</td>
+    <td>400,000</td>
+    <td>100,000</td>
+</tr>
+<tr>
+    <td>2</td>
+    <td>2021-11-15</td>
+    <td>5,000</td>
+    <td>50,000</td>
+    <td>80,000</td>
+    
+</tr>
+<tr>
+    <td>3</td>
+    <td>2021-12-25</td>
+    <td>22,000</td>
+    <td>450,000</td>
+    <td>125,000</td>
+    
+</tr>
+</table>
+<h2>Add Home Game</h2>
+<from action="">
+    <select name="teams" id="team-select">
+        <option value="">Choose a team</option>
+        <option value="1">Pawnee Racoons</option>
+        <option value="2">New York Bricks</option>
+        <option value="3">Utah Rocks</option>
+    </select>
+    <label for ="gdate">Home Game Date</label>
+    <input type="date" id="gdate" name="gdate">
+    <label for ="tsold">Tickets Sold</label>
+    <input type="number" id="tsold" name="tsold">
+    <label for ="mrevenue">Merchandise Revenue</label>
+    <input type="number" id="mrevenue" name="mrevenue">
+    <label for ="crevenue">Concession Revenue</label>
+    <input type="number" id="crevenue" name="Crevenue">
+    <input type="submit" value="Add Game">
+</from>
+
+</body>
+</html>

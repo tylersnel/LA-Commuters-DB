@@ -1,0 +1,61 @@
+<html>
+<head>
+  <title>Player Stats</title>
+
+</head>
+<body>
+<h1>Player Stats</h1>
+<a href="Visiting Teams.html">Visiting Teams</a> - <a href="Players.html">Players</a> - <a href="Player Stats.html">Player Stats</a> - <a href="Home Game Sales.html">Home Game Sales</a>
+<table border="1">
+<tr>
+        <th>Player ID</th>
+        <th>Game Date</th>
+        <th>Points</th>
+        <th>Rebounds</th>
+        <th>Assists</th>
+</tr>
+<tr>
+    <td>20210105</td>
+    <td>2022-02-27</td>
+    <td>5</td>
+    <td>10</td>
+    <td>0</td>
+</tr>
+<tr>
+    <td>20120218</td>
+    <td>2021-11-15</td>
+    <td>60</td>
+    <td>0</td>
+    <td>0</td>
+    
+</tr>
+<tr>
+    <td>20210101</td>
+    <td>2021-12-25</td>
+    <td>10</td>
+    <td>10</td>
+    <td>10</td>
+    
+</tr>
+</table>
+<h2>Add Player Stats</h2>
+<from action="">
+    <select name="teams" id="team-select">
+        <option value="">Choose a Player</option>
+        <option value="20210105">Dan Smith</option>
+        <option value="20120218">Robert California</option>
+        <option value="20210101">James Kirk</option>
+    </select>
+    <label for ="gdate">Game Date</label>
+    <input type="date" id="gdate" name="gdate">
+    <label for ="tsold">Points</label>
+    <input type="number" id="tsold" name="tsold">
+    <label for ="mrevenue">Rebounds</label>
+    <input type="number" id="mrevenue" name="mrevenue">
+    <label for ="crevenue">Assists</label>
+    <input type="number" id="crevenue" name="Crevenue">
+    <input type="submit" value="Add Stats">
+</from>
+
+</body>
+</html>
